@@ -13,11 +13,12 @@ class SubirController extends Controller
     public function index() {
         $archivos = Subir::all();
 
-        // if ($archivos->isEmpty()) {
-        //     return redirect()->route('subir.create'); // Redirecciona al formulario de subir archivo si no hay ningun arhivo
-        // }
+         if ($archivos->isEmpty()) {
+            return redirect()->route('subir.create'); // Redirecciona al formulario de subir archivo si no hay ningun arhivo
+        }
 
         return view('subir.index', compact('archivos'));  // Pasa los archivos a la vista
+
     }
 
     // Método para mostrar el formulario de subida
@@ -45,7 +46,7 @@ class SubirController extends Controller
         $filePath = "private/ejercicio/{$timestampedName}";
         Storage::putFileAs('private/ejercicio', $file, $timestampedName);
 
-        Subir::create([
+        Subir::firstOrCreate([
             'nombre_original' => $originalName,
             'nombre' => $filePath,
         ]);

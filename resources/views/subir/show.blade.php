@@ -1,4 +1,4 @@
-@extends('layouts.app')
+@extends('base')
 
 @section('title', 'Ver Archivo')
 
@@ -8,7 +8,7 @@
 
         <div class="file-details">
             <div class="image-container">
-                <img src="{{ route('subir.show', $archivo->id) }}" alt="{{ $archivo->nombre_original }}">
+                <img src="{{ route('imagenes.show', basename($archivo->nombre)) }}" alt="{{ $archivo->nombre_original }}" style="max-width: 600px; height: auto;">
             </div>
             <div class="file-info">
                 <p><strong>ID:</strong> {{ $archivo->id }}</p>

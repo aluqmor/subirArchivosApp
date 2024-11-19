@@ -86,6 +86,7 @@ h2 {
 .file-list li {
     width: calc(33.333% - 20px);
     text-align: center;
+    padding: 2rem;
 }
 
 .file-list li img {

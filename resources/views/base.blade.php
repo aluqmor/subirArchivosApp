@@ -14,7 +14,7 @@
             <h1>Aplicación de Subida de Archivos</h1>
             <nav>
                 <ul>
-                    <li><a href="{{ route('subir.create') }}">Subir Archivo</a></li>
+                <li><a href="{{ route('subir.create') }}">Subir Archivo</a></li>
                 </ul>
             </nav>
         </div>
