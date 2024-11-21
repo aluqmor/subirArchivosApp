@@ -8,7 +8,6 @@
 
         <form action="{{ route('subir.store') }}" method="POST" enctype="multipart/form-data" class="upload-form">
             @csrf
-            <label for="archivo">Selecciona un archivo:</label>
             <input type="file" name="archivo" id="archivo" accept="image/*" required>
 
             <button type="submit">Subir Archivo</button>

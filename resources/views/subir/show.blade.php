@@ -8,7 +8,7 @@
 
         <div class="file-details">
             <div class="image-container">
-                <img src="{{ route('imagenes.show', basename($archivo->nombre)) }}" alt="{{ $archivo->nombre_original }}" style="max-width: 600px; height: auto;">
+                <img src="{{ route('imagenes.show', basename($archivo->nombre)) }}" alt="{{ $archivo->nombre_original }}" style="width: 800px; height: auto;">
             </div>
             <div class="file-info">
                 <p><strong>ID:</strong> {{ $archivo->id }}</p>

@@ -48,7 +48,7 @@ class SubirController extends Controller
 
         Subir::firstOrCreate([
             'nombre_original' => $originalName,
-            'nombre' => $filePath,
+            'nombre' => $timestampedName,
         ]);
 
         return redirect()->route('subir.index');

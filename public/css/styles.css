@@ -53,8 +53,12 @@ h2 {
 }
 
 .upload-form {
+    margin: 4rem;
+
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .upload-form input[type="file"] {
@@ -109,14 +113,21 @@ h2 {
 }
 
 .file-details {
+    width: 100%;
+    height: auto;
+
     display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
     gap: 20px;
     margin-top: 30px;
 }
 
 .image-container {
     flex: 1;
-    max-width: 400px;
+    max-width: 800px;
+    margin: 0 auto;
 }
 
 .image-container img {
@@ -153,6 +164,21 @@ h2 {
 
 .back-button:hover {
     background-color: #45a049;
+}
+
+button {
+    margin: 2rem;
+}
+
+.subir {
+    border: 2px solid darkgreen;
+    padding: 1rem;
+}
+
+.subir:hover {
+    background-color: #45a049;
+    color: white;
+    text-decoration: none;
 }
 
 footer {

@@ -65,7 +65,7 @@ return [
     |
     */
 
-    'timezone' => env('APP_TIMEZONE', 'UTC'),
+    'timezone' => 'Europe/Madrid', // para ajustar la hora a la de España
 
     /*
     |--------------------------------------------------------------------------
