@@ -11,9 +11,9 @@ class ImageController extends Controller
 {
     public function show($filename) {
         // Verifica si el archivo existe en el almacenamiento privado
-        if (Storage::exists('private/ejercicio/' . $filename)) {
+        if (Storage::exists('ejercicio/' . $filename)) {
             // Devuelve la imagen
-            return response()->file(storage_path('app/private/private/ejercicio/' . $filename));
+            return response()->file(storage_path('app/private/ejercicio/' . $filename));
         }
 
         abort(404);  // Si no se encuentra, lanza un error 404

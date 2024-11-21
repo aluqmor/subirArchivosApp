@@ -43,8 +43,8 @@ class SubirController extends Controller
         $extension = $file->getClientOriginalExtension();
         $timestampedName = date('Y_m_d_H_i_s') . '_' . $originalName;
 
-        $filePath = "private/ejercicio/{$timestampedName}";
-        Storage::putFileAs('private/ejercicio', $file, $timestampedName);
+        $filePath = "ejercicio/{$timestampedName}";
+        Storage::putFileAs('ejercicio', $file, $timestampedName);
 
         Subir::firstOrCreate([
             'nombre_original' => $originalName,
