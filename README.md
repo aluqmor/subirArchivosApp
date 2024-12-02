@@ -29,7 +29,7 @@ Sigue estos pasos para descargar y configurar el repositorio:
 1. Clona el repositorio:
 
     ```sh
-    git clone https://github.com/tu-usuario/tu-repositorio.git
+    git clone https://github.com/aluqmor/subirArchivosApp.git
     ```
 
 2. Navega al directorio del proyecto:
