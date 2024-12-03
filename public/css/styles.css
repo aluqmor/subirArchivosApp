@@ -114,20 +114,16 @@ h2 {
 
 .file-details {
     width: 100%;
-    height: auto;
-
     display: flex;
-    flex-flow: column;
-    justify-content: center;
-    align-items: center;
+    justify-content: space-between;
+    align-items: flex-start;
     gap: 20px;
     margin-top: 30px;
 }
 
-.image-container {
+.image-container, .file-info {
     flex: 1;
-    max-width: 800px;
-    margin: 0 auto;
+    max-width: 50%;
 }
 
 .image-container img {
